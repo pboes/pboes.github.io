@@ -1,0 +1,81 @@
+---
+layout: post
+title: Simple facts about exponential growth to keep in mind, for instance​ in the
+  Singularity discussion.
+date:
+type: post
+parent_id: '0'
+published: false
+password: ''
+status: draft
+categories: []
+tags: []
+meta:
+  _wpcom_is_markdown: '1'
+author:
+  login: pboes
+  email: paul.boes.10@ucl.ac.uk
+  display_name: pboes
+  first_name: ''
+  last_name: ''
+permalink: "/"
+---
+<p>It seems zeitgeisty these years to start a talk with a slide of some exponential graph - flat for most of the time, then a sudden kink, and off it shoots through the roof of the building. Then, there is a label right at the kink saying "You are here" or "Humanity now". The message is clear: We're on the verge of something big, something dramatic, something we cannot even imagine. The Singularity<sup id="fnref-877-1"><a href="#fn-877-1" class="jetpack-footnote">1</a></sup> is a common context in which slides like these may appear.</p>
+<p>The purpose of this post is to put a bit of pressure on this kind of claim and to ask which aspects of such claims are meaningful. But my way of doing so will not be based on good arguments that I have that the Singularity or other "beyond homo sapiens" ideas are mistaken. Rather, I will simply go through some basic facts about exponential and logistic growth that should relativise such claims, even if they turn out to be correct. So nothing very original or novel, but still something that I think is worth keeping in mind when confronted with the above rhetoric.</p>
+<p>I will focus on two things: 1. The "kinking point" of an exponential curve and how it is not a special point at all unless one fixes a special unit scale; 2. The relationship between exponential growth, the type that goes through the roof, and logistic growth, another very common type of growth that has a saturating point and thus does not go through the roof. In particular, with respect to this latter relationship, I will show that (a) the two types of growth are difficult to distinguish at early stages (with respect to some fixed unit scale) and (b) that we can understand exponential growth as a logistic growth whose saturation point increases exponentially over time, for example, due to technological progress. I think that all of these points are important to understanding (a) why humans easily are, and often have been, fooled into both overestimating and underestimating the growth potentials of things like populations, certain technologies, etc. and (b) the senses in which temporal exceptionalism - the idea that the present period in history is somehow very different from others, and that therefore most historical regularities cannot be applied to the present - can and cannot be reasonably maintained.</p>
+<p><strong>1. The kink in an exponential curve is not a special point.</strong></p>
+<p>This is very basic but easy to forget: Let's say that the kinking point in the graph of the exponential curve is where the curve on the graph has a slope of 1. To illustrate, below I have drawn the simple exponential curve in four ranges. In the first two pictures, the kink sits where the curve meets the red line, i.e. at about 4 for the range 0 to 5 and at about 11 for the range 0 to 15. Now, these images already make my point: What we see is the exact same function, with only the axes rescaled so as to get the whole graph into view. Still, the kink sits at completely different points: about 4 in the first, about 11 in the second, about 40 in the third, and about 160 in the fourth. What do we learn: The kink is no special point at all, its position always depends on the units of the graph chosen. This is trivially true from a mathematical point of view, but still easily misleading.</p>
+<p>[gallery ids="904,903,902,901" columns="2" size="full"]</p>
+<p>So: If somebody wants to convince you that you live in a special time or something very special is about to happen, by showing you that "2018" sits right at the kinking point of some exponential graph, you should ask: "well are the units you chose really the relevant units?" Don't get me wrong. In many cases, there may very well be a reason to prefer one set of units over another, and in this case the point may be very special.</p>
+<p>so the takehome message is: Assessment of the relevance always has to come with assessment of the relevance of the units: In the fourth graph, nothing seems to happen until 155, but that's only because the units on the y-axis are ridiculously large.</p>
+<p>Can you give examples here situation where this really matters??</p>
+<h3>2. Exponential and logistic growth are often indiscernible at early stages.</h3>
+<p>now on to something slightly less simple. Consider the following to curves: the one on the left shows the exponential curve that we already had. the one on the right shows a so-called logistic curve. The one describes unbounded growth, the other bounded growth.</p>
+<p>(how are they generated, is there some "microprocess" picture to understand this??)</p>
+<p>&nbsp;</p>
+<p><img class="  wp-image-907 aligncenter" src="{{ site.baseurl }}/assets/exp_curve1.jpg?w=600" alt="exp_curve" width="389" height="248" /><img class="  wp-image-906 aligncenter" src="{{ site.baseurl }}/assets/logistic_curve.jpg?w=600" alt="logistic_curve" width="413" height="264" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>To put a lot of weight on the point of the kink is to essentially miss the point of exponential growth, which is exactly that it describes a time-invariant process. Remember your high school lessons about compound interest: If you 100$ and you invest it for 5 years at an interest rate of 3%, then you get out</p>
+<p>100 * 1,03^5,</p>
+<p>provided that you never withdrew any money. This is exactly the form of an exponential function because if you left the invested time $t$ unspecified, you'd have the function</p>
+<p>money_after_t(t) = 100*1,03^t.</p>
+<p>And remember the derivation of this formula: After the first year your account balance is 100*1,03. Then after the second year, it's your interest on your  balance, so</p>
+<p>(100<em>1,03)</em>1,03 = 100*1,03^2</p>
+<p>and so on. There are two things to stress here:</p>
+<p>The <em>reason</em> for the exploding character of the exponential graphs is also apparent from this reasoning. Your money could only fly through the roof because in every year you re-invested all of it: Exponential growth is a typical characteristic of processes where all new units of a given year $t$ together with <em>all </em>older units produced in the past, are used to produce the new units of year t+1. Think of growing bacterial cultures or tumor cells. This is also why the logic of technological growth is inherently exponential (as well as frequently its practice): Every new technology, when entering the club of existing technologies, exponentially enlarges the number of possible combinations, synergy effects and so on of existing technologies, hence facilitating the even faster development of yet new technologies, and so on.</p>
+<p><em>Contrast this with the logistic curve. </em>This is exponential growth with an equally exponentially growing counter-force, so to speak. (in other words the counter force increases as one gets closer to the saturation point. a classical reasoning here is Malthus and his limit on population growth.</p>
+<p>Now, the crucial point is that exponential growth is always, in principle, very similar from logistic growth. That is, for every point on an exponential growth curve there is a logistic growth curve such that the two curves are pretty much identical up to that point. in other words, it is often difficult to gauge whether the development so far is that of a genuine exponential curve or that of a logistic curve.</p>
+<p>But this is somewhat of an academic point. Of course, after fixing an unit scale as the relevant one, the range in which this uncertainty exists is only very small and in both cases the</p>
+<p><img class="alignnone size-full wp-image-908" src="{{ site.baseurl }}/assets/comparison.jpg" alt="comparison" width="1280" height="818" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>But, you will be right to say: well, the resources are always, at least at some point, finite, so the relevant curve is <em>always </em>the logic</p>
+<p>&nbsp;</p>
+<p>Being wary with the promises of exponential growth and singularity) What would be your statement here: We can always make sense of the data so far as a logistic curve. Malthusian error and the raising of the saturation limit. (Solow-Model)</p>
+<p>&nbsp;</p>
+<p>WRT the second point/dynamics: COunterforces. Everythign can be reinvested in exponential growth, in logistic growth the more the less dynamics. Now, of course we live in a limited world and there is a limit to anything requiring worldly resources. But the point is that if the boundary is large enough, then a logistic map can be very similar to an exponential curve. Why is this interesting? Because while there have been a number of cases in which people underestimated the following fact: Often the upper limit is itself a function of the quantity of interest. Concretely: It may be that the upper bound increases together with whatever is meant to be bounded: Larger population may yield (or at least be correlated with) better technology, allowing. This is the classical error of Malthus when devising his model of pessimistic population dynamics. Or when people talk about the end of science in the vein of "there are no open questions". Well, scientific progress certainly has counterforces and boundaries but saturation in questions will most unlikely be responsible for its demise. (if anything, the number of scientists that society requires, see this post). Or, slightly indirectly, the Solow-Modell of economic growth, in which there can be no increase in capital unless one takes into account the technological process. And then, of course, AI.</p>
+<p>In fact, "the end of history"- ideas that say that we have reached the saturation bound are themselves an extreme form of temporal exceptionalism.</p>
+<p>Conditions under which logistic growth might appear as exponential growth: Because the limits grows over time itself.</p>
+<p>Topics to cover:</p>
+<p>Singularity talk</p>
+<ol>
+<li>Warum der Kink nicht besonders ist/und kurze Diskussion von "natural units" eines Problems.</li>
+<li>What is invariant and what isn't in an exponential curve.</li>
+<li>A more relevant question: Is the process actually exponential or is it logistic? What does the answer depend on? How to interpret the extra factor in logistic growth? (Automotive industry?)</li>
+<li>Selection Bias: It is very likely that at any given time people will look for exactly the sectors that experience exponential growth at that time.</li>
+<li>(Blockchain)</li>
+<li>Hard shoulders: Evolutionary pace and considerations. --&gt; Singularity talk.</li>
+</ol>
+<div class="grammarly-disable-indicator"></div>
+<div class="grammarly-disable-indicator"></div>
+<p>&nbsp;</p>
+<div class="grammarly-disable-indicator"></div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-877-1">
+By Singularity I here refer to this stuff on Wikipedia.&#160;<a href="#fnref-877-1">&#8617;</a>
+</li>
+</ol>
+</div>

@@ -1,0 +1,81 @@
+site: pboes
+title: pboes
+description: >-
+  personal website of Paul Boes
+googlewebfonts: Fira+Sans:wght@400;500;700
+lang: en-US
+timezone: Berlin
+repo: https://github.com/pboes/pboes.github.io # site repo [optional]
+data-theme: light # default theme "dark" | "light"
+
+author:
+  name: Paul Boes
+  github: pboes # github username
+  twitter: _paulboes_ # twitter username
+
+# URL settings
+url: "https://pboes.github.io" #
+baseurl: "" # leave blank if not wishd
+permalink: ""
+permalink: pretty 
+
+
+markdown: kramdown
+kramdown:
+  #input: GFM
+  #syntax_highlighter: rouge
+  math_engine: katex
+  math_engine_opts: {}
+
+exclude:
+  - .jekyll-cache
+  - .obsidian
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - CONTRIBUTING.md
+  
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-relative-links
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug
+  
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+relative_links:
+  enabled:     true
+  collections: false
