@@ -36,7 +36,7 @@ $$[\hat{\beta} - 1.96 \times SE(\hat{\beta}), \hat{\beta} + 1.96 \times SE(\hat{
 
 where $$\hat{\beta} \equiv \hat{\beta}(x)$$ is the OLS estimator of $$\beta$$ and $$SE(\hat{\beta}) $$ is its standard error. Using the above connection to hypothesis tests, we can identify this confidence interval map (since both OLS estimator is a function of the data, the above defines a map from data to sets of parameter values) as the one that is induced by an optimal[^why_optimal] $$5\%$$-hypothesis test for the normalised OLS estimator : That is, we set $$f(x) \equiv \hat{\beta}(x)/SE(\hat{\beta}(x))$$ 
 
-$$h(\theta) = \arg \min_{[a,b] \subseteq \mathbb{R}: \mathrm{Prob}_{x \sim P_\theta}(\frac{\hat{\beta}}{SE(\hat{\beta})} \in [a,b] \geq 0.95)} b - a,$$
+$$h(\theta) = \arg \min_{[a,b] \subseteq \mathbb{R}: \mathrm{Prob}_{x \sim P_\theta}(\frac{\hat{\beta}}{SE(\hat{\beta})} \in [a,b]) \geq 0.95} b - a,$$
 
 which is a somewhat convoluted way to write that we define $$h$$ as mapping any value $$\theta$$ to the smallest (in terms of the Lebesgue measure) interval such that, under the null hypothesis $$\theta$$,  the probability that the expression $$\hat{\beta}/SE(\hat{\beta})$$ is contained in this interval is at least $$95\%$$. Now, it conveniently turns out that under the usual assumptions of simple linear regression models, we know the distribution of this expression analytically to be a Student's t-distribution, which is a bell-shaped distribution, centered around $$\theta$$. Hence, $h$ defines a valid $$95\%$$-hypothesis test for $$\hat{\beta}$$  and we can analytically evaluate its value (which is also called $$t$$-value) as
 
